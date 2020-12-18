@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Cinema Poland</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--[if lt IE 9]>
+                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+    <body class="animated bounceInDown">
+        <div class="avatar">
+            <img src="img/avatar.png" alt="Avatar">
+        </div>
+
+        <div class="content">
+            <h1 class="title">Zarządzanie<br> Filmami</h1>
+            <br><br>
+            <input type="button" onclick="location.href='Filmy.php';" value="Aktualna Lista" />	
+     <br><br>
+     
+    <form action="DodajFilm.php" method="post" >
+    <fieldset>
+      <legend>Dodaj film:</legend>
+      <br/>
+	Tytuł:
+      <input name="tytul"></input>
+      <br/>
+      
+      Oryginalny tytuł:
+      <input name="oryginalny_tytul"></input>
+      <br/>
+      
+      ID reżysera:
+      <input name="ID_rezyser"></input>
+      <br/>
+      
+      Gatunek:
+      <select name="ID_gatunek" >
+		<option value="">Twój Wybór</option>
+        <option value="1">Sci-Fi</option>
+        <option value="2">Akcja</option>
+        <option value="3">Dokument</option>
+        <option value="4">Dramat</option>
+        <option value="5">Wojenny</option>
+        <option value="6">Animowany</option>
+        <option value="7">Przygodowy</option>
+        <option value="8">Komedia</option>
+        <option value="9">Thriller</option>
+        <option value="10">Horror</option>
+        <option value="11">Western/option>
+        <option value="12">Przyrodniczy</option>
+        <option value="13">Edukacyjny</option>
+        <option value="14">Muzyczny</option>
+        <option value="15">Biograficzny</option>
+        <option value="16">Religijny</option>
+        <option value="17">Kryminalny</option>
+        <option value="18">Katastroficzny</option>
+        <option value="19">Familijny</option>
+        <option value="20">Romantyczny</option>
+        <option value="21">Historyczny</option>
+      </select>
+      <br/>
+      Rok premiery:
+      <input name="rok_premiery"></input>
+      <br/>
+      
+      Produkcja (państwo):
+      <input name="produkcja"></input>
+      <br/>
+      
+      Ograniczenia wiekowe:
+      <select name="ID_ograniczenia" >
+		<option value="">Twój Wybór</option>
+        <option value="1">0</option>
+        <option value="2">7</option>
+        <option value="3">12</option>
+        <option value="4">16</option>
+        <option value="5">18</option>
+        </select>
+      <br/>
+      
+      Czas trwania (minuty):
+      <input name="czas_trwania"></input>
+      <br/>
+      
+      <button>Dodaj</button>
+    </fieldset>
+    </form>
+    <br><br>
+     
+    
+    <form action="EdytujFilm.php" method="post" >
+    <fieldset>
+      <legend>Edytuj film:</legend>
+      ID filmu:
+      <input name="ID_film"></input>
+      <br/>
+	Tytuł:
+      <input name="tytul"></input>
+      <br/>
+      
+      Oryginalny tytuł:
+      <input name="oryginalny_tytul"></input>
+      <br/>
+      
+      ID reżysera:
+      <input name="ID_rezyser"></input>
+      <br/>
+      
+      Gatunek:
+      <select name="ID_gatunek" >
+		<option value="">Twój Wybór</option>
+        <option value="1">Sci-Fi</option>
+        <option value="2">Akcja</option>
+        <option value="3">Dokument</option>
+        <option value="4">Dramat</option>
+        <option value="5">Wojenny</option>
+        <option value="6">Animowany</option>
+        <option value="7">Przygodowy</option>
+        <option value="8">Komedia</option>
+        <option value="9">Thriller</option>
+        <option value="10">Horror</option>
+        <option value="11">Western/option>
+        <option value="12">Przyrodniczy</option>
+        <option value="13">Edukacyjny</option>
+        <option value="14">Muzyczny</option>
+        <option value="15">Biograficzny</option>
+        <option value="16">Religijny</option>
+        <option value="17">Kryminalny</option>
+        <option value="18">Katastroficzny</option>
+        <option value="19">Familijny</option>
+        <option value="20">Romantyczny</option>
+        <option value="21">Historyczny</option>
+      </select>
+      <br/>
+      Rok premiery:
+      <input name="rok_premiery"></input>
+      <br/>
+      
+      Produkcja (państwo):
+      <input name="produkcja"></input>
+      <br/>
+      
+      Ograniczenia wiekowe:
+      <select name="ID_ograniczenia" >
+	  <option value="">Twój Wybór</option>
+        <option value="1">0</option>
+        <option value="2">7</option>
+        <option value="3">12</option>
+        <option value="4">16</option>
+        <option value="5">18</option>
+        </select>
+      <br/>
+      
+      Czas trwania (minuty):
+      <input name="czas_trwania"></input>
+      <br/>
+      <button>Edytuj</button>
+    </fieldset>
+     </form>
+
+                <br> <br>	
+                <form action="UsunFilm.php" method="post" >
+    <fieldset>
+      <legend>Usuń film:</legend>
+      ID filmu:
+      <input name="ID_film"></input>
+      <br/>
+	Tytuł:
+      <input name="tytul"></input>
+      <br/>
+      <button>Usuń</button>
+    </fieldset>
+     </form>	
+     
+     <br> <br>
+     <input type="button" onclick="location.href='index.html';" value="Powrót" />	
+	 <br> <br>
+
+               
+        </div>
+    </body>
+</html>

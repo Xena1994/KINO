@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Cinema Poland</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--[if lt IE 9]>
+                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+    <body class="animated bounceInDown">
+        <div class="avatar">
+            <img src="img/avatar.png" alt="Avatar">
+        </div>
+
+        <div class="content">
+            <h1 class="title">Zarządzanie <br>Seansami</h1>
+            <br><br>
+            
+            <input type="button" onclick="location.href='Seanse.php';" value="Aktualna Lista" />	
+     <br><br>
+     
+    <form action="DodajSeans.php" method="post" >
+    <fieldset>
+      <legend>Dodaj seans:</legend>
+
+      ID filmu:
+      <input name="ID_film"></input>
+      <br/>
+      
+      ID sali:
+      <input name="ID_sala"></input>
+      <br/>
+      
+      Dzień tygodnia:
+     <select name="dzien_tygodnia" >
+       <option value="poniedziałek">Poniedziałek</option>
+     	<option value="wtorek">Wtorek</option>
+        <option value="środa">Środa</option>
+        <option value="czwartek">Czwartek</option>
+        <option value="piątek">Piątek</option>
+        <option value="sobota">Sobota</option>
+        <option value="niedziela">Niedziela</option>
+        </select>
+      <br>
+     Godzina(GG-MM-SS):
+      <input name="godzina"></input>
+      <br/>
+      
+      <button>Dodaj</button>
+    </fieldset>
+    </form>
+    <br><br>
+     
+    
+    <form action="EdytujSeans.php" method="post" >
+    <fieldset>
+      <legend>Edytuj seans:</legend>
+      ID seansu:
+      <input name="ID_seans"></input>
+      <br/>
+
+      ID filmu:
+      <input name="ID_film"></input>
+      <br/>
+      
+      ID sali:
+      <input name="ID_sala"></input>
+      <br/>
+      
+       Dzień tygodnia:
+     <select name="dzien_tygodnia" >
+        <option value="poniedziałek">Poniedziałek</option>
+     	<option value="wtorek">Wtorek</option>
+        <option value="środa">Środa</option>
+        <option value="czwartek">Czwartek</option>
+        <option value="piątek">Piątek</option>
+        <option value="sobota">Sobota</option>
+        <option value="niedziela">Niedziela</option>
+        </select>
+      <br>
+     Godzina(GG-MM-SS):
+      <input name="godzina"></input>
+      <br/>
+      <button>Edytuj</button>
+    </fieldset>
+     </form>
+
+                <br> <br>	
+                <form action="UsunSeans.php" method="post" >
+    <fieldset>
+      <legend>Usuń seans: </legend>
+      ID seansu:
+      <input name="ID_seans"></input>
+      <br/>
+      ID filmu:
+      <input name="ID_film"></input>
+      <br/>
+      <button>Usuń</button>
+    </fieldset>
+     </form>	
+     
+     <br> <br>
+     <input type="button" onclick="location.href='index.html';" value="Powrót" />	
+	 <br> <br>
+
+               
+        </div>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Cinema Poland</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--[if lt IE 9]>
+                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+    <body class="animated bounceInDown">
+        <div class="avatar">
+            <img src="img/avatar.png" alt="Avatar">
+        </div>
+
+        <div class="content">
+            <h1 class="title">Zarządzanie <br>Gatunkami</h1>
+            <br><br>
+            <input type="button" onclick="location.href='Gatunki.php';" value="Aktualna Lista" />	
+     <br><br>
+     
+    <form action="DodajGatunek.php" method="post" >
+    <fieldset>
+      <legend>Dodaj gatunek:</legend>
+      
+
+      Nazwa gatunku:
+      <input type="text" name="nazwa_gatunek"></input>
+      <br/>
+      
+      <button>Dodaj</button>
+    </fieldset>
+    </form>
+    <br><br>
+
+                <form action="UsunGatunek.php" method="post" >
+    <fieldset>
+      <legend>Usuń gatunek:</legend>
+	ID gatunku:
+	  <input type="text" name="ID_gatunek"></input>
+      <br/>
+	  
+      Nazwa gatunku:
+      <input type="text" name="nazwa_gatunek"></input>
+      <br/>
+	  
+	 
+      <button>Usuń</button>
+    </fieldset>
+     </form>	
+     
+     <br> <br>
+     <input type="button" onclick="location.href='index.html';" value="Powrót" />	
+<br> <br>
+               
+        </div>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Cinema Poland</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--[if lt IE 9]>
+                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+    <body class="animated bounceInDown">
+        <div class="avatar">
+            <img src="img/avatar.png" alt="Avatar">
+        </div>
+
+        <div class="content">
+            <h1 class="title">Zarządzanie <br>Biletami</h1>
+            <br><br>
+            <input type="button" onclick="location.href='Bilety.php';" value="Aktualna Lista" />	
+     <br><br>
+     
+    <form action="DodajBilet.php" method="post" >
+    <fieldset>
+      <legend>Dodaj bilet:</legend>
+      
+
+      ID seansu:
+      <input type="text" name="ID_seans"></input>
+      <br/>
+      
+      Typ biletu:
+       <select name="ID_typ_bilet" >
+	   <option value="0">Twój Wybór</option>
+        <option value="1">Bilet normalny - 27.00 zł.</option>
+        <option value="2">Bilet do lat 12 - 15.00 zł.</option>
+        <option value="3">Uczniowie i studenci - do lat 26 - 20.00 zł.</option>
+        <option value="4">Seniorzy - od 60 lat - 21.00 zł.</option>
+        </select>
+      <br/>
+      
+      ID rezerwacji:
+      <input type="text" name="ID_rezerwacja"></input>
+      <br/>
+      <button>Dodaj</button>
+    </fieldset>
+    </form>
+    <br><br>
+     
+    
+    <form action="EdytujBilet.php" method="post" >
+    <fieldset>
+      <legend>Edytuj bilet:</legend>
+      ID biletu:
+      <input name="ID_bilet"></input>
+      <br/>
+
+      ID seansu:
+      <input name="ID_seans"></input>
+      <br/>
+      
+       Typ biletu:
+       <select name="ID_typ_bilet" >
+	   <option value="0">Twój Wybór</option>
+        <option value="1">Bilet normalny - 27.00 zł.</option>
+        <option value="2">Bilet do lat 12 - 15.00 zł.</option>
+        <option value="3">Uczniowie i studenci - do lat 26 - 20.00 zł.</option>
+        <option value="4">Seniorzy - od 60 lat - 21.00 zł.</option>
+        </select>
+      <br/>
+       ID rezerwacji:
+      <input name="ID_rezerwacja"></input>
+      <br/>
+      <button>Edytuj</button>
+    </fieldset>
+     </form>
+
+                <br> <br>	
+                <form action="UsunBilet.php" method="post" >
+    <fieldset>
+      <legend>Usuń bilet:</legend>
+      ID biletu:
+      <input name="ID_bilet"></input>
+      <br/>
+
+      ID seansu:
+      <input name="ID_seans"></input>
+      <br/>
+       ID rezerwacji:
+      <input name="ID_rezerwacja"></input>
+      <br/>
+      <button>Usuń</button>
+    </fieldset>
+     </form>	
+     
+     <br> <br>
+     <input type="button" onclick="location.href='index.html';" value="Powrót" />	
+<br> <br>
+               
+        </div>
+    </body>
+</html>

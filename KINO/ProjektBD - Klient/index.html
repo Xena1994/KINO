@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Cinema Poland</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <!--[if lt IE 9]>
+                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+    <body class="animated bounceInDown">
+        <div class="avatar"><img src="img/avatar.png" alt="Avatar"></div>
+        
+		<div class="content">
+            <h1 class="title">Repertuar</h1>
+            <form action="wyszukiwania_klient.php" method="post">
+
+                <select onchange="self.location.href = this.value">
+				<option value="">Wybierz najwieksze hity</option>
+					<option value="Bóg_nie_umarł_2.html">Bóg nie umarł 2</option>
+					<option value="Cloverfield_Lane_10.html">Cloverfield Lane 10</option>
+					<option value="Cień.html">Cień</option>
+					<option value="Droga_do_mistrzostwa.html">Droga do mistrzostwa</option>
+					<option value="Hardcore_Henry.html">Hardcore Henry</option>
+					<option value="High_Rise.html">High-Rise</option>
+                    <option value="Kapitan_Ameryka_wojna_bohaterów.html">Kapitan Ameryka: wojna bohaterów</option>
+					<option value="Księga_dżungli.html">Księga Dżungli</option>
+					<option value="Letnie_przesilenie.html">Letnie przesilenie</option>
+                    <option value="Maraton_Kapitan_Ameryka.html">Maraton Kapitan Ameryka</option>
+                    <option value="Piąta_fala.html">Piąta fala</option>
+                    <option value="Po_tamtej_stronie_drzwi.html">Po tamtej stronie drzwi</option>
+                    <option value="Szefowa.html">Szefowa</option>
+                </select>
+
+                <br><br>			
+                <p>
+					By zarezerwować bilety, należy utworzyć konto! <br>
+					<input type="button" onclick="location.href='rejestracjaKlienta.html';" value="Rejestracja" />
+					<input type="button" onclick="location.href='logowanieKlienta.html';" value="Logowanie" />
+					<br><br>
+					
+					Pełen repertuar kina wraz z seansami znajdziesz 
+					<a href="SeanseKlient.php">tu</a>.<br>
+					<br>
+				
+					<input type="button" onclick="location.href='CenyBiletow.php';" value="Ceny Biletów" />
+					<br><br>
+					<input type="button" onclick="location.href='WsystkieFilmy.php';" value="Wszystkie Filmy" />
+					<br><br>
+					<input type="button" onclick="location.href='logowanieKlientaSprawdzenieBiletów.html';" value="Twoje Bilety" />
+					<br><br>
+					<input type="button" onclick="location.href='http://localhost/Kino-BD/StronaG%C5%82%C3%B3wna.html';" value="Strona Główna" />
+					
+					
+					
+					
+                </p>
+        </div>
+    </body>
+</html>

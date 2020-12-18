@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Cinema Poland</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--[if lt IE 9]>
+                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+    <body class="animated bounceInDown">
+        <div class="avatar">
+            <img src="img/avatar.png" alt="Avatar">
+        </div>
+
+        <div class="content">
+            <h1 class="title">Zarządzanie <br>Rezerwacjami</h1>
+            <br><br>
+            <input type="button" onclick="location.href='Rezerwacje.php';" value="Aktualna Lista" />	
+     <br><br>
+     
+    <form action="DodajRezerwacje.php" method="post" >
+    <fieldset>
+      <legend>Dodaj rezerwacje:</legend>
+
+      ID klienta:
+      <input name="ID_klient"></input>
+      <br/>
+      
+      Ilosc biletów:
+      <input name="ilosc_biletow"></input>
+      <br/>
+      
+      
+      <button>Dodaj</button>
+    </fieldset>
+    </form>
+    <br><br>
+     
+    
+    <form action="EdytujRezerwacje.php" method="post" >
+    <fieldset>
+      <legend>Edytuj rezerwacje:</legend>
+      ID rezerwacji:
+      <input name="ID_rezerwacja"></input>
+      <br/>
+      ID klienta:
+      <input name="ID_klient"></input>
+      <br/>
+      
+      Ilosc biletów:
+      <input name="ilosc_biletow"></input>
+      <br/>
+      
+      <button>Edytuj</button>
+    </fieldset>
+     </form>
+
+                <br> <br>	
+                <form action="UsunRezerwacje.php" method="post" >
+    <fieldset>
+      <legend>Usuń rezerwacje:</legend>
+      ID rezerwacji:
+      <input name="ID_rezerwacja"></input>
+      <br/>
+
+      ID klienta:
+      <input name="ID_klient"></input>
+      <br/>
+      
+      <button>Usuń</button>
+    </fieldset>
+     </form>	
+     
+     <br> <br>
+     <input type="button" onclick="location.href='index.html';" value="Powrót" />	
+	 <br> <br>
+
+               
+        </div>
+    </body>
+</html>

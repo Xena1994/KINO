@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Cinema Poland</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--[if lt IE 9]>
+                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+    <body class="animated bounceInDown">
+        <div class="avatar">
+            <img src="img/avatar.png" alt="Avatar">
+        </div>
+
+        <div class="content">
+            <h1 class="title">Zarządzanie<br>Reżyserami</h1>
+            <br><br>
+            <input type="button" onclick="location.href='Rezyserzy.php';" value="Aktualna Lista" />
+     <br><br>
+    <form action="DodajRezysera.php" method="post" >
+    <fieldset>
+	<legend>Dodaj reżysera:</legend>
+
+      Imię:
+      <input name="imie"></input>
+      <br/>
+      
+      Nazwisko:
+      <input name="nazwisko"></input>
+      <br/>
+      <button>Dodaj</button>
+    </fieldset>
+    </form>
+    <br><br>
+     
+    
+    <form action="EdytujRezysera.php" method="post" >
+    <fieldset>
+      <legend>Edytuj reżysera:</legend>
+      ID reżysera:
+      <input name="ID_rezyser"></input>
+      <br/>
+
+      Imię:
+      <input name="imie"></input>
+      <br/>
+      
+      Nazwisko:
+      <input name="nazwisko"></input>
+      <br/>
+      <button>Edytuj</button>
+    </fieldset>
+     </form>
+
+                <br> <br>	
+                <form action="UsunRezysera.php" method="post" >
+    <fieldset>
+      <legend>Usuń reżysera:</legend>
+      ID reżysera:
+      <input name="ID_rezyser"></input>
+      <br/>
+      <button>Usuń</button>
+    </fieldset>
+     </form>	
+     
+     <br> <br>
+     <input type="button" onclick="location.href='index.html';" value="Powrót" />	
+	 <br> <br>
+
+               
+        </div>
+    </body>
+</html>

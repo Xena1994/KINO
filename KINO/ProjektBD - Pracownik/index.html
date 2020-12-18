@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Cinema Poland</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--[if lt IE 9]>
+                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+    <body class="animated bounceInDown">
+        <div class="avatar">
+            <img src="img/avatar.png" alt="Avatar">
+        </div>
+
+        <div class="content">
+            <h1 class="title">Zarządzanie <br>bazą danych Kina</h1>
+
+                <select onchange="self.location.href = this.value">
+                
+                    
+                    <option value="">Twój Wybór</option>
+					<option value="CenyBiletow.php">Lista Cen Biletów</option>
+					<option value="OgraniczeniaWiekowe.php">Lista Ograniczeń Wiekowych</option>
+					<option value="Pracownicy.php">Lista Pracowników</option>
+					<option value="zarządzanieBiletami.html">Zarządzanie Biletami</option>
+					<option value="zarządzanieFilmami.html">Zarządzanie Filmami</option>
+					<option value="zarządzanieGatunkami.html">Zarządzanie Gatunkami</option>
+					<option value="zarządzanieKlientami.html">Zarządzanie Klientami</option>
+					 <option value="zarządzanieRezerwacjami.html">Zarządzanie Rezerwacjami</option>
+                    <option value="zarządzanieReżyserami.html">Zarządzanie Reżyserami</option> 
+                    <option value="zarządzanieSeansami.html">Zarządzanie Seansami</option> 
+                    
+                </select>
+
+                <br> <br>		
+
+<input type="button" onclick="location.href='http://localhost/ProjektBD%20-%20Pracownik/logowaniePracownika.html';" value="Wyloguj się" />	
+ <br> <br>				
+
+               
+        </div>
+    </body>
+</html>

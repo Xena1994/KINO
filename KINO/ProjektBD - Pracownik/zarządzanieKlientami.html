@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Cinema Poland</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--[if lt IE 9]>
+                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+
+    <body class="animated bounceInDown">
+        <div class="avatar">
+            <img src="img/avatar.png" alt="Avatar">
+        </div>
+
+        <div class="content">
+            <h1 class="title">Zarządzanie <br>Klientami</h1>
+            <br><br>
+            <input type="button" onclick="location.href='Klienci.php';" value="Aktualna Lista" />	
+     <br><br>
+     
+    <form action="DodajKlienta.php" method="post" >
+    <fieldset>
+      <legend>Dodaj klienta:</legend>
+
+      Imie:
+      <input name="imie"></input>
+      <br/>
+      
+      Nazwisko:
+      <input name="nazwisko"></input>
+      <br/>
+	  Email:
+      <input name="email"></input>
+      <br/>
+
+      Hasło:
+      <input name="haslo"></input>
+      <br/>
+      
+      
+      <button>Dodaj</button>
+    </fieldset>
+    </form>
+    <br><br>
+     
+    
+    <form action="EdytujKlienta.php" method="post" >
+    <fieldset>
+      <legend>Edytuj klienta:</legend>
+   
+ ID klienta:
+      <input name="ID_klient"></input>
+      <br/>
+		
+      Imie:
+      <input name="imie"></input>
+      <br/>
+      
+      Nazwisko:
+      <input name="nazwisko"></input>
+      <br/>
+      
+     
+	  Email:
+      <input name="email"></input>
+      <br/>
+	   Hasło:
+      <input name="haslo"></input>
+      <br/>
+	  
+	  
+      <button>Edytuj</button>
+    </fieldset>
+     </form>
+
+                <br> <br>	
+                <form action="UsunKlienta.php" method="post" >
+    <fieldset>
+      <legend>Usuń klienta:</legend>
+      ID klienta:
+      <input name="ID_klient"></input>
+      <br/>
+
+      Email:
+      <input name="email"></input>
+      <br/>
+      
+      <button>Usuń</button>
+    </fieldset>
+     </form>	
+     
+     <br> <br>
+     <input type="button" onclick="location.href='index.html';" value="Powrót" />	
+	 <br> <br>
+
+               
+        </div>
+    </body>
+</html>
